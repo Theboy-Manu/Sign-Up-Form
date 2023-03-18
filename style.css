@@ -1,0 +1,85 @@
+/* custom properties */
+
+
+
+
+/* css rules for default selectors */
+body {
+    width: auto;
+    display: flex;
+    margin: 0;
+    height: 100vh; 
+}
+
+
+
+.left {
+    position: relative;
+    flex: 1;
+    display: flex;
+    
+} 
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 2;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.content{
+    display: flex;
+}
+
+h1, p {
+    text-align: center;
+}
+
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    background-color: black;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#logo > * {
+    gap: 20px;
+    color: white;
+    
+}
+
+#logo > img {
+    height: 100px;
+
+}
+
+.left > img {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+}
+
+button {
+    margin-left: 40px;
+}

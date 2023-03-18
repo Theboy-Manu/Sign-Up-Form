@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up form</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <script src="script.js"></script>
     <div class="left">
       <img
         src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1862&q=80"
@@ -52,8 +52,15 @@
             <ul>
               <li><label for="lastName">last name</label></li>
               <input type="text" name="user_lastName" id="lastName" required />
-              <li><label for="number">phone number</label></li>
-              <input type="number" name="user_number" id="number" required />
+              <li><label for="phoneNumber">phone number</label></li>
+              <input
+                type="tel"
+                name="user_phoneNumber"
+                id="phoneNumber"
+                minlength="10"
+                maxlength="10"
+                required
+              />
               <li><label for="password2">confirm password</label></li>
               <input
                 type="password"

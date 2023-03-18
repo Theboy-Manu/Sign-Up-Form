@@ -1,5 +1,10 @@
 /* custom properties */
-
+:root {
+    --button-color: #596D48;
+    --input-border: #E5E7EB;
+    --selected-color: #0070F3; /* Custom color value */
+    --green-color: rgb(12, 190, 12);
+  }
 
 
 
@@ -52,7 +57,7 @@ li{
 }
 
 #logo {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 200px;
     width: 100%;
@@ -82,4 +87,30 @@ li{
 
 button {
     margin-left: 40px;
+    color: var(--button-color);
+    width: 150px;
+    height: 30px;
+}
+
+input:invalid{
+
+    background: var(--input-border);
+    border-radius: 5px;
+}
+
+
+input:focus {
+    background: var(--selected-color);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+input:valid {
+    background: var(--green-color);
+    border-radius: 5px; 
+}
+
+.error {
+    background: var(--input-border) !important;
+    border-radius: 5px !important;
 }

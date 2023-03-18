@@ -19,11 +19,11 @@
           src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
           alt="odin-logo"
         />
-        <p>Lorem.</p>
+        <p>Lorem</p>
       </div>
     </div>
     <div class="right">
-      <form action="" method="">
+      <form action="" method="" autocomplete="off">
         <div class="main">
           <h1>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam
@@ -36,14 +36,28 @@
           <div class="column-1">
             <ul>
               <li><label for="name">first name</label></li>
-              <input type="text" name="user_name" id="name" required />
+              <input
+                type="text"
+                name="user_name"
+                id="name"
+                placeholder="Enter your first name"
+                required
+              />
               <li><label for="mail">email</label></li>
-              <input type="email" name="user_email" id="mail" required />
+              <input
+                type="email"
+                name="user_email"
+                id="mail"
+                placeholder="Enter your email address"
+                required
+              />
               <li><label for="password">password</label></li>
               <input
                 type="password"
                 name="user_password"
                 id="password"
+                placeholder="Enter a password"
+                minlength="8"
                 required
               />
             </ul>
@@ -51,14 +65,22 @@
           <div class="column-2">
             <ul>
               <li><label for="lastName">last name</label></li>
-              <input type="text" name="user_lastName" id="lastName" required />
+              <input
+                type="text"
+                name="user_lastName"
+                id="lastName"
+                placeholder="Enter your last name"
+                required
+              />
               <li><label for="phoneNumber">phone number</label></li>
               <input
                 type="tel"
                 name="user_phoneNumber"
                 id="phoneNumber"
+                placeholder="Enter your phone number"
                 minlength="10"
                 maxlength="10"
+                pattern="[0-9]+"
                 required
               />
               <li><label for="password2">confirm password</label></li>
@@ -66,6 +88,8 @@
                 type="password"
                 name="user_password2"
                 id="password2"
+                placeholder="Confirm your password"
+                minlength="8"
                 required
               />
             </ul>
@@ -73,7 +97,7 @@
         </div>
         <div class="foot">
           <button type="submit">create account</button>
-          <p>Already have a <a href="">login account</a></p>
+          <p>Already have an account <a href="">log in</a></p>
         </div>
       </form>
     </div>
